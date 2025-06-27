@@ -99,6 +99,7 @@ footer {
 
 /* media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+   
     /* header */
     nav {
         display: block;
@@ -111,13 +112,25 @@ footer {
     #menu {
         display: flex; /* display menu items in a row */
     }
-#menu > li {
+    #menu > li {
         padding-left: 1rem; /* add left padding to menu items */
     }
 
     .nav-toggle-label {
         display: none; /* hide the toggle label on larger screens */
     }
+
+    #logo {
+        font-size: 200%; /* increase logo size */
+        line-height: 75px; /* adjust line height to center logo vertically */
+        margin: 0 0.5rem; /* add margin to the left and right of the logo */
+    }
+
+    /* main content */
+    main {
+        /* push main content down to accommodate larger header */
+        margin-top: 79px; /* adjust margin to avoid overlap with fixed header */
+
 }
 
   /* make nav visible */
