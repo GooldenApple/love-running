@@ -27,6 +27,9 @@ header {
   z-index: 99;
   width: 100%;
   box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 header a {
@@ -65,6 +68,20 @@ nav {
   padding: 0 1rem;
   box-shadow: 0 2px 2px #3a3a3a;
   display: none; /* hide by default */
+}
+
+/* nav toggle */
+#nav-toggle:checked~nav {
+    display:block;
+    top: 100%;
+}
+
+#nav-toggle {
+    display: none; /* hide the checkbox */
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* main content */
