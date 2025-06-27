@@ -29,6 +29,7 @@ header {
   box-shadow: 0 2px 2px #3a3a3a;
 }
 
+
 header a {
   text-decoration: none;
   color: inherit; /* inherit color from body */
@@ -39,6 +40,20 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #252525;
+}
+
+#menu {
+    font-size:medium;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1rem;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
 
 /* main content */
