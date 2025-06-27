@@ -89,6 +89,7 @@ main {
   background-color: lightblue;
   /* make main element take up any surplus space to push footer to the bottom */
   flex: 1 0 auto; /* allows main to grow and fill the available space */
+  margin-top: 47px; /* to avoid overlap with fixed header */
 }
 
 /* footer */
