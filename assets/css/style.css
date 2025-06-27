@@ -96,3 +96,46 @@ main {
 footer {
   background-color: orange;
 }
+
+/* media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* header */
+    nav {
+        display: block;
+        position: relative; /* change to relative for larger screens */
+        box-shadow: none; /* remove box shadow */
+        width: fit-content; /* fit content width */
+        padding-right: 1rem; /* add right padding */
+    }
+
+    #menu {
+        display: flex; /* display menu items in a row */
+    }
+#menu > li {
+        padding-left: 1rem; /* add left padding to menu items */
+    }
+
+    .nav-toggle-label {
+        display: none; /* hide the toggle label on larger screens */
+    }
+}
+
+  /* make nav visible */
+  nav {
+    display: block;
+    position: relative; /* change to relative for larger screens */
+    top: 0; /* reset top position */
+  }
+
+  #nav-toggle {
+    display: none; /* hide the checkbox on larger screens */
+  }
+
+  .nav-toggle-label {
+    display: none; /* hide the toggle label on larger screens */
+  }
+
+  #menu {
+    text-align: right; /* align menu items to the right */
+  }
+}
