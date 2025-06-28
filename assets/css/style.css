@@ -154,6 +154,25 @@ main {
 
 }
 
+#circle-cover-bg {
+   /* make the background image cover the entire div */
+  background: url("../images/reasons-image.webp") no-repeat center center / cover;
+  height: 90vw;
+  width:90vw;
+  margin-bottom: 20px;
+  /* makes the square image a circle */
+  border-radius: 50%;
+  max-width: 300px; /* max width for larger screens */
+  max-height: 300px; /* max height for larger screens */
+}
+
+#benefits-image {
+  /* make the image container flex to center the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* footer */
 #social-networks {
     text-align: center;
