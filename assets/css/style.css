@@ -57,7 +57,7 @@ header a {
 }
 
 #menu > li {
-  margin-bottom: 1rem;
+  margin-bottom:1em;
 }
 
 .active {
@@ -73,12 +73,13 @@ nav {
   padding: 0 1rem;
   box-shadow: 0 2px 2px #3a3a3a;
   display: none; /* hide by default */
+  top: 100%; /* position below the header */
 }
 
 /* nav toggle */
 #nav-toggle:checked~nav {
     display:block;
-    top: 100%;
+   
 }
 
 #nav-toggle {
@@ -99,7 +100,7 @@ main {
 /* hero section */
 
 #hero {
-  height:600px;
+  height: 600px;
   width: 100%;
   background: url("../images/hero-image.webp") no-repeat center center/cover;
   position: relative; /* position relative for absolute children */
@@ -118,7 +119,39 @@ main {
 }
 
 #cover-text > h2, #cover-text > h3 {
-  color: #ffffff
+  color: #ffffff;
+}
+
+#reasons {
+  margin-bottom: 20px auto;
+  width: 90%;
+}
+
+#reasons h2 {
+  font-size:280%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+
+#benefits-physical > div #benefits-mental > div{
+ line-height: 20px;
+ margin-bottom: 20px; 
+}
+
+#benefits p {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+  
+  
+
+#benefits hr {
+  border-top: 1px solid #3a3a3a;
+  margin: 5px 0;
+ 
+
 }
 
 /* footer */
@@ -162,7 +195,7 @@ main {
     }
 
     #logo {
-        font-size: 200%; /* increase logo size */
+        font-size: 280%;/* increase logo size */
         line-height: 75px; /* adjust line height to center logo vertically */
         margin: 0 0.5rem; /* add margin to the left and right of the logo */
     }
@@ -171,8 +204,7 @@ main {
     main {
         /* push main content down to accommodate larger header */
         margin-top: 79px; /* adjust margin to avoid overlap with fixed header */
-
-}
+    }
 
   /* make nav visible */
   nav {
