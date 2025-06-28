@@ -123,7 +123,7 @@ main {
 }
 
 #reasons {
-  margin-bottom: 20px auto;
+  margin: 20px auto;
   width: 90%;
 }
 
@@ -156,10 +156,11 @@ main {
 
 #circle-cover-bg {
    /* make the background image cover the entire div */
-  background: url("../images/reasons-image.webp") no-repeat center center / cover;
+  background: url("../images/reasons-image.webp") no-repeat top center / cover;
   height: 90vw;
-  width:90vw;
+  width: 90vw;
   margin-bottom: 20px;
+  margin: 0 auto; /* center the image */
   /* makes the square image a circle */
   border-radius: 50%;
   max-width: 300px; /* max width for larger screens */
@@ -171,6 +172,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 /* footer */
