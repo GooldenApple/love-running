@@ -252,6 +252,21 @@ main {
     right: 50px;
   }
 
+  /* reasons section */
+  #benefits-physical, #benefits-mental{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #benefits-physical > div, #benefits-mental > div {
+    width: 75%;
+  }
+
+  #benefits-mental > div {
+    text-align: end;
+    align-self: flex-end; /* align text to the end */
+  }
 }
 
 /* large devices (laptop desktop 992px and up */
@@ -260,4 +275,33 @@ main {
     border-bottom: 1px solid #3a3a3a;
 
  }
+}
+
+/* media query: large devices (laptop desktop 1200px and wider) */
+@media screen and (min-width: 1200px) {
+  /* reasons section */
+  #benefits {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #benefits > div {
+    flex: 1; /* make each section take equal space */
+  }
+
+  #benefits-image {
+    order: 0; /* place the image first */
+  }
+
+  #benefits-mental {
+    order: 1; /* place mental benefits second */
+  }
+
+  #benefits-mental > div {
+    algin-self: flex-start; /* align mental benefits to the start */
+  }
+
+  #benefits-physical > div {
+    align-self: flex-end; /* align physical benefits to the end */
+  }
 }
