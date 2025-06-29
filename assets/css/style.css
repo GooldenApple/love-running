@@ -50,14 +50,14 @@ header a {
 
 
 #menu {
-  font-size: medium;
+  font-size: 110%;
   letter-spacing: 4px;
   list-style-type: none;
  
 }
 
 #menu > li {
-  margin-bottom:1em;
+  margin-bottom: 1em;
 }
 
 .active {
@@ -78,7 +78,7 @@ nav {
 
 /* nav toggle */
 #nav-toggle:checked~nav {
-    display:block;
+    display: block;
    
 }
 
@@ -143,6 +143,8 @@ main {
 #benefits p {
   padding: 0 20px;
   margin-bottom: 20px;
+  
+
 }
   
   
@@ -172,8 +174,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  
 }
+
+  /* adding background image to #times div */
+  #times {
+    background: url("../images/dublin-city.webp") no-repeat center center / cover;
+   /* handles responsivity without need for a media query */
+    display: flex;
+   flex-wrap: wrap;
+  }
+
+  
+
+    
 
 /* footer */
 #social-networks {
@@ -267,6 +281,7 @@ main {
     text-align: end;
     align-self: flex-end; /* align text to the end */
   }
+
 }
 
 /* large devices (laptop desktop 992px and up */
