@@ -142,8 +142,6 @@ main {
 
 #benefits p {
   padding: 0 20px;
-  margin-bottom: 20px;
-  
 
 }
   
@@ -162,7 +160,6 @@ main {
   height: 90vw;
   width: 90vw;
   margin-bottom: 20px;
-  margin: 0 auto; /* center the image */
   /* makes the square image a circle */
   border-radius: 50%;
   max-width: 300px; /* max width for larger screens */
@@ -179,12 +176,30 @@ main {
 
   /* adding background image to #times div */
   #times {
-    background: url("../images/dublin-city.webp") no-repeat center center / cover;
+    background: url("../images/dublin-city.webp") no-repeat center/cover;
    /* handles responsivity without need for a media query */
     display: flex;
    flex-wrap: wrap;
   }
 
+  #times > div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* this will not wrap on screens of less than 400px wide.
+    each div will expand to fill the available space on its row */
+    flex-basis: 200px; /* each div takes up at least 200px */
+    flex-grow: 1; /* allows the divs to grow and fill the space */
+
+    /* Creates a grid of meetup time divs over the background image*/
+    border: 2px solid white;
+  }
+
+  #times h3 {
+    /* override the heading color set in general styles */
+    color: #fafafa;
+  }
   
 
     
